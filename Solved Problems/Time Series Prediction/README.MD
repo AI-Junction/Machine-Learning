@@ -17,7 +17,7 @@ The below graph show the “SMS In” values coming to a cell (tower) on an hour
 
 The Rolling Mean and Rolling Standard Deviation for a window of 7 units is shown below
 
- 
+  ![alt text](https://github.com/cpattekar43/Machine-Learning/blob/master/Solved%20Problems/Time%20Series%20Prediction/Images/figure_10.png)
 
 
 To check the stationarity of the given time series, we perform the Dickey Fuller test. If the ‘Test Statistic’ value is found to be lower than the ‘Critical Values’ then this indicates stationarity and no specific treatment is needed to make the data stationary for feeding it into the ARIMA model. In case, the data is non stationary then this implementation uses the ‘differencing’ method in order to make the data stationary. In common terms the data is stationary if no specific ‘trend’ is observed in the mean or standard deviation values.
@@ -36,18 +36,24 @@ dtype: float64
 
 As a next step we perform the decomposition of the given time series into ‘Trend’, ‘Seasonality’ and ‘Residual’ graphs.
 
+ ![alt text](https://github.com/cpattekar43/Machine-Learning/blob/master/Solved%20Problems/Time%20Series%20Prediction/Images/figure_2.png)
  
 
 Now we train the ARIMA model with some predefined values for ‘p’, ‘d’, ‘q’. We try to get an early view of the ARIMA effectiveness by running the prediction on the same training dataset. The results are seen to be very close to the actual values. In the graph below, the blue color represents the actual values while the red color represents the predicted values
- 
+
+ ![alt text](https://github.com/cpattekar43/Machine-Learning/blob/master/Solved%20Problems/Time%20Series%20Prediction/Images/figure_3.png)
 
 To further obtain an indication of the number of lagged values that the ARIMA model should use, we generate the Auto Correlation Graph (ACF). The range where ACF values are positive are the potential candidates for being considered for the ‘p’ value. This ‘p’ value is the number of lags considered in the Auto Regression model of ARIMA.
 
- 
+
+ ![alt text](https://github.com/cpattekar43/Machine-Learning/blob/master/Solved%20Problems/Time%20Series%20Prediction/Images/figure_4.png)
+
 As next step, we generate a range of p, d q values and work out all permutations of p, d, q in this range. We identify that particular combination of p, d, q values which generates the Best Fitting ARIMA model. The best combination of p, d, q is selected by finding the ARIMA model that generates the least AIC value. AIC stands for Akaike Information Criteria. 
 Having found the best combination of p, d, q values, we now generate forecast for next 30 steps (hours) ahead in future
  
 
+
+ ![alt text](https://github.com/cpattekar43/Machine-Learning/blob/master/Solved%20Problems/Time%20Series%20Prediction/Images/figure_9.png)
 
 
 Business scenario:
