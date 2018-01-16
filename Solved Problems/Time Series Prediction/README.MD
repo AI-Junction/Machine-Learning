@@ -12,7 +12,7 @@ The outputs from our implementation of the generic timeseries prediction are ill
 
 The below graph show the “SMS In” values coming to a cell (tower) on an hourly basis of a telecom operator. 
 
- 
+ ![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
 
 The Rolling Mean and Rolling Standard Deviation for a window of 7 units is shown below
