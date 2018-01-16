@@ -1,4 +1,4 @@
-Generic Time-series Prediction using ARIMA Model
+<B>Generic Time-series Prediction using ARIMA Model</B>
 
 In real life we come across a number of scenarios where a time series based data needs to be projected and predicted for future time periods that could be vary from days to hours to minutes. For example, the equity analysts want to predict the stock prices based on the historical prices of a given scrip. Similarly, the property dealers want to know how the property prices are likely to vary purely based on the past prices trends etc. And there are many such examples.
 
